@@ -34,29 +34,29 @@ void loop() {
 
     if (IMU.accelerationAvailable()){
         IMU.readAcceleration(Ax, Ay, Az);
-        Serial.print("Acceleration:\t");
+        Serial.print("Acceleration: ");
         Serial.print(Ax);
-        Serial.print("\t");
+        Serial.print(" ");
         Serial.print(Ay);
-        Serial.print("\t");
+        Serial.print(" ");
         Serial.println(Az);
     }
     if (IMU.gyroscopeAvailable()){
         IMU.readGyroscope(Gx, Gy, Gz);
-        Serial.print("Gyroscope:\t");
+        Serial.print("Gyroscope: ");
         Serial.print(Gx);
-        Serial.print("\t");
+        Serial.print(" ");
         Serial.print(Gy);
-        Serial.print("\t");
+        Serial.print(" ");
         Serial.println(Gz);
     }
     if (IMU.magneticFieldAvailable()){
         IMU.readMagneticField(Mx, My, Mz);
-        Serial.print("Magnetometer:\t");
+        Serial.print("Magnetometer: ");
         Serial.print(Mx);
-        Serial.print("\t");
+        Serial.print(" ");
         Serial.print(My);
-        Serial.print("\t");
+        Serial.print(" ");
         Serial.println(Mz);
     }
 }
